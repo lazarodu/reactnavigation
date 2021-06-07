@@ -6,7 +6,11 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator
+      screenOptions={{
+        headerShown: true,
+      }}
+    >
       <Drawer.Screen name="Screen" component={Screen} />
       <Drawer.Screen name="Notification" component={Notification} />
     </Drawer.Navigator>
